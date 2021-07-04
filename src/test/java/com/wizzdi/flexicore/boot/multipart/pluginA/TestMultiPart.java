@@ -21,7 +21,7 @@ public class TestMultiPart implements  Plugin {
 
 
 	@PostMapping(value = "/testMultipart",consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-	public String newVCAEvent(MultipartHttpServletRequest multipartHttpServletRequest) throws IOException, ServletException {
+	public String testMultipart(MultipartHttpServletRequest multipartHttpServletRequest) throws IOException, ServletException {
 		return multipartHttpServletRequest.getParts().size()+"";
 
 	}
